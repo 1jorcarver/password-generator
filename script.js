@@ -1,9 +1,9 @@
 // Assignment code here
-var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*"];
-var passwordEmpty = []; 
+var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var specArray = ["!", "@", "#", "$", "%", "^", "&", "*"];
+var pwArray = []; 
 // Array.toString()
 // String.replace()
 var totalArray = [];
@@ -16,14 +16,18 @@ function promptLength(){
    alert("Password length not valid. Must be 8-128 characters.");
    promptLength();
   }
-}
+};
 
 promptLength();
 
 // Asking user to confirm the other variables
 var useUpper = confirm("Do you want to use an uppercase letter?")
 // IF USER SAYS YES
-totalArray.push(uppercase)
+totalArray.push(upperArray)
+
+var useLower = confirm("Do you want to use a lowercase letter?")
+
+totalArray.push(lowerArray)
 
 
 
