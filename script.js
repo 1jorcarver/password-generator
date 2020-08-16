@@ -29,6 +29,14 @@ var useLower = confirm("Do you want to use a lowercase letter?")
 
 totalArray.push(lowerArray)
 
+var useNum = confirm("Do you want to use a number?")
+
+totalArray.push(numArray)
+
+var useSpec = confirm("Do you want to use a special character?")
+
+totalArray.push(specArray)
+
 
 
 // Password function
